@@ -1,0 +1,62 @@
+@use "../global/variables.scss";
+
+// RESET
+@mixin link-reset {
+  text-decoration: none;
+  color: variables.$baseColors-black;
+  cursor: pointer;
+}
+
+@mixin button-reset {
+  padding: 0;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin li-reset-last-el {
+  &:last-child {
+    margin: 0;
+  }
+}
+
+@mixin fieldset-reset {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// VIEWPORTS
+@mixin wrapper-mobile($size: variables.$mobile-width-only) {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+
+@mixin wrapper-tablet($size: variables.$tablet-width) {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+
+@mixin wrapper-desktop($size: variabls.$desktop-width) {
+  margin: 0 auto;
+  width: calc(100% - 80px);
+  max-width: 1440px;
+}
+
+// TITLE
+@mixin title($f-size: 18px, $l-height: 32px) {
+  margin: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: $f-size;
+  line-height: $l-height;
+  color: variables.$baseColors-black;
+}

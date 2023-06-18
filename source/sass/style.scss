@@ -1,7 +1,5 @@
 /* GLOBAL */
-@import "global/variables";
-@import "global/global";
-@import "global/fonts";
+@use "global/bootstrap.scss";
 
 /* BLOCKS */
-@import "blocks/header";
+@use "blocks/header";
