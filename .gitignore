@@ -1,0 +1,12 @@
+node_modules
+*.min.*
+build
+.idea
+.DS_Store
+npm-debug.*
+Thumbs.db
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
