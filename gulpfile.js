@@ -1,20 +1,20 @@
-import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import gulpIf from 'gulp-if';
-import dartSass from "sass";
-import gulpSass from "gulp-sass";
-import postcss from 'gulp-postcss';
-import postUrl from 'postcss-url';
-import autoprefixer from 'autoprefixer';
-import csso from 'postcss-csso';
-import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import { stacksvg } from "gulp-stacksvg";
-import { deleteAsync } from 'del';
-import browser from 'browser-sync';
-import bemlinter from 'gulp-html-bemlinter';
-import { htmlValidator } from "gulp-w3c-html-validator";
+import gulp from 'gulp';                  // Gulp для автоматизации
+import plumber from 'gulp-plumber';       // перехват ошибок, и после устранения ошибки сборка восстановит работоспособность
+import gulpIf from 'gulp-if';             // определять, находится ли проект в разработке и в зависимости от этого подключать или отключать команду
+import dartSass from "sass";              // для использования препроцессора SASS
+import gulpSass from "gulp-sass";         // для использования препроцессора SASS
+import postcss from 'gulp-postcss';       // библиотека для работы других плагинов
+import postUrl from 'postcss-url';        // перебазирования, встроенного или копирования в url().
+import autoprefixer from 'autoprefixer';  // автопрефиксы
+import csso from 'postcss-csso';          // минификация CSS
+import terser from 'gulp-terser';         // минификация и оптимизация javascript
+import squoosh from 'gulp-libsquoosh';    // минификация изображения
+import svgo from 'gulp-svgmin';           // минификация файлов SVG
+import { stacksvg } from "gulp-stacksvg"; // для объединения svg-файлов в sprite
+import { deleteAsync } from 'del';        // для чистки сборки
+import browser from 'browser-sync';       // обновляет браузер при сохранении
+import bemlinter from 'gulp-html-bemlinter';  // линтер бэм
+import { htmlValidator } from "gulp-w3c-html-validator";  // проверка на валидаторе
 
 const sass = gulpSass(dartSass);
 let isDevelopment = true;
