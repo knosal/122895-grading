@@ -3,7 +3,7 @@
 // RESET
 @mixin link-reset {
   text-decoration: none;
-  color: variables.$baseColors-black;
+  color: $baseColors-black;
   cursor: pointer;
 }
 
@@ -35,17 +35,17 @@
 }
 
 // VIEWPORTS
-@mixin wrapper-mobile($size: variables.$mobile-width-only) {
+@mixin wrapper-mobile($size: $mobile-width-only) {
   margin: 0 auto;
   width: calc(100% - 40px);
 }
 
-@mixin wrapper-tablet($size: variables.$tablet-width) {
+@mixin wrapper-tablet($size: $tablet-width) {
   margin: 0 auto;
   width: calc(100% - 40px);
 }
 
-@mixin wrapper-desktop($size: variabls.$desktop-width) {
+@mixin wrapper-desktop($size: $desktop-width) {
   margin: 0 auto;
   width: calc(100% - 80px);
   max-width: 1440px;
@@ -58,5 +58,5 @@
   font-style: normal;
   font-size: $f-size;
   line-height: $l-height;
-  color: variables.$baseColors-black;
+  color: $baseColors-black;
 }

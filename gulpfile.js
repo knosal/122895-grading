@@ -7,13 +7,16 @@ import postcss from 'gulp-postcss';       // библиотека для раб�
 import postUrl from 'postcss-url';        // перебазирования, встроенного или копирования в url().
 import autoprefixer from 'autoprefixer';  // автопрефиксы
 import csso from 'postcss-csso';          // минификация CSS
+import htmlmin from 'gulp-htmlmin';       // минимизатор HTML
 import terser from 'gulp-terser';         // минификация и оптимизация javascript
+import rename from 'gulp-rename';         // переименование файлов
 import squoosh from 'gulp-libsquoosh';    // минификация изображения
 import svgo from 'gulp-svgmin';           // минификация файлов SVG
 import { stacksvg } from "gulp-stacksvg"; // для объединения svg-файлов в sprite
 import { deleteAsync } from 'del';        // для чистки сборки
 import browser from 'browser-sync';       // обновляет браузер при сохранении
 import bemlinter from 'gulp-html-bemlinter';  // линтер бэм
+import fileInclude from "gulp-file-include" // Сборка файлов через @include
 import { htmlValidator } from "gulp-w3c-html-validator";  // проверка на валидаторе
 
 const sass = gulpSass(dartSass);
@@ -21,6 +24,8 @@ let isDevelopment = true;
 
 export function processMarkup() {
   return gulp.src('source/*.html')
+    .pipe(fileInclude())
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -30,7 +35,7 @@ export function lintBem() {
 }
 
 export function validateMarkup() {
-  return gulp.src('source/*.html')
+  return gulp.src('build/*.html')
     .pipe(htmlValidator.analyzer())
     .pipe(htmlValidator.reporter({ throwErrors: true }));
 }
@@ -44,6 +49,7 @@ export function processStyles() {
       autoprefixer(),
       csso()
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: isDevelopment }))
     .pipe(browser.stream());
 }
@@ -117,16 +123,17 @@ function watchFiles() {
 }
 
 function compileProject(done) {
-  gulp.parallel(
-    processMarkup,
-    processStyles,
-    processScripts,
-    optimizeVector,
-    createStack,
-    copyAssets,
+  copyAssets,
     optimizeImages,
-    createWebp
-  )(done);
+    createWebp,
+    gulp.parallel(
+      processMarkup,
+      processStyles,
+      processScripts,
+      optimizeVector,
+      createStack,
+      copyAssets,
+    )(done);
 }
 
 function deleteBuild() {
