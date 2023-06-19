@@ -35,7 +35,7 @@ export function lintBem() {
 }
 
 export function validateMarkup() {
-  return gulp.src('build/*.html')
+  return gulp.src('build/index.html')
     .pipe(htmlValidator.analyzer())
     .pipe(htmlValidator.reporter({ throwErrors: true }));
 }
@@ -93,6 +93,7 @@ export function copyAssets() {
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
+    'source/leaflet/**',
   ], {
     base: 'source'
   })
