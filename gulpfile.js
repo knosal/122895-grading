@@ -124,17 +124,16 @@ function watchFiles() {
 }
 
 function compileProject(done) {
-  copyAssets,
+  gulp.parallel(
+    processMarkup,
+    processStyles,
+    processScripts,
+    optimizeVector,
+    createStack,
+    copyAssets,
     optimizeImages,
     createWebp,
-    gulp.parallel(
-      processMarkup,
-      processStyles,
-      processScripts,
-      optimizeVector,
-      createStack,
-      copyAssets,
-    )(done);
+  )(done);
 }
 
 function deleteBuild() {
