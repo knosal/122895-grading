@@ -6,7 +6,6 @@ Thumbs.db
 
 node_modules/
 build/
-source/leaflet/
 
 *.min.*
 *.ai
