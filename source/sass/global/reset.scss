@@ -18,6 +18,11 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  line-height: 0;
+}
+
 .leaflet-bottom {
   display: none;
 }

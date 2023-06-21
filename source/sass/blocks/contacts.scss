@@ -1,0 +1,36 @@
+.contacts__address-inner {
+  position: relative;
+}
+
+.contacts__address-value {
+  margin-left: 19px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    content: "";
+  }
+
+  &--address::before {
+    background-image: url("../../img/svg/address-icon.svg");
+  }
+
+  &--phone::before {
+    background-image: url("../../img/svg/phone-icon.svg");
+  }
+}
+
+
+.contacts__address-inner:first-child {
+  margin-bottom: 16px;
+}
+
+.contacts__address-link {
+  color: $baseColors-black;
+}

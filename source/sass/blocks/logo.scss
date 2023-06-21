@@ -1,0 +1,37 @@
+.logo__inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  &--header {
+    align-items: center;
+    flex-direction: row;
+
+    gap: 20px;
+  }
+}
+
+.logo__link {
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.logo__promo {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  &--header {
+    max-width: 126px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

@@ -1,0 +1,102 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.main-footer {
+  background-color: $baseColors-white;
+}
+
+.main-footer__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: stretch;
+    column-gap: 30px;
+    grid-template-columns: minmax(223px, 1fr) minmax(222px, 1fr) minmax(223px, 1fr);
+    grid-template-rows: auto auto auto;
+    row-gap: 30px;
+    grid-template-areas:
+      "socials socials socials"
+      "shop media contacts"
+      "copyright copyright copyright";
+
+    @include wrapper-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: minmax(223px, 1fr) minmax(223px, 1fr) minmax(222px, 1fr) minmax(223px, 1fr);
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    justify-content: stretch;
+    column-gap: 30px;
+    grid-template-areas:
+      "socials shop media contacts"
+      "copyright copyright copyright copyright";
+
+    @include wrapper-desktop;
+    margin-top: 45px;
+  }
+}
+
+.main-footer__inner {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__socials-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+    grid-area: socials;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    min-width: 318px;
+    gap: 30px;
+  }
+}
+
+.main-footer__shop {
+  @media (min-width: $tablet-width) {
+    min-width: 223px;
+    max-width: 317px;
+    grid-area: shop;
+  }
+}
+
+.main-footer__media {
+  @media (min-width: $tablet-width) {
+    min-width: 222px;
+    grid-area: media;
+  }
+}
+
+.main-footer__contacts {
+  @media (min-width: $tablet-width) {
+    min-width: 223px;
+    grid-area: contacts;
+  }
+}
+
+.main-footer__copyright {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    grid-area: copyright;
+  }
+}

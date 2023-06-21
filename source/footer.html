@@ -1,91 +1,97 @@
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <!--ЛОГОТИП-->
-    <div class="main-footer__logo">
-      <a class="main-footer__link-logo logo" href="#" aria-label="Логотип интернет-магазина кофейных напитков">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop-icon.svg" width="149" height="72" />
-          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet-icon.svg" width="113" height="46" />
-          <img src="img/svg/logo-mobile-icon.svg" srcset="img/svg/logo-mobile-icon.svg" width="86" height="35" alt="Логотип интернет-магазин игрушек: Мишка" />
-        </picture>
-      </a>
-      <span class="main-footer__promo promo">Интернет-магазин кофейных напитков Drink2Go</span>
+    <div class="main-footer__inner main-footer__socials-logo section-frame">
+      <!--ЛОГОТИП-->
+      <div class="main-footer__logo logo">
+        <div class="logo__inner logo__inner--footer">
+          <a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Drink2Go ">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/svg/logo-full-icon.svg" width="149" height="72" />
+              <source media="(min-width: 768px)" srcset="img/svg/logo-full-icon.svg" width="113" height="46" />
+              <img src="img/svg/logo-short-icon.svg" srcset="img/svg/logo-short-icon.svg" width="86" height="35" alt="Логотип Drink2Go" />
+            </picture>
+          </a>
+          <span class="logo__promo">Интернет-магазин кофейных напитков</span>
+        </div>
+      </div>
+
+      <!--СОЦ.СЕТИ-->
+      <section class="main-footer__social socials">
+        <div class="socials__wrapper">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Вконтакте">
+                <svg width="20" height="20">
+                  <use xlink:href="img/icons/stack.svg#social-vk-icon"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Pinterest">
+                <svg width="20" height="20">
+                  <use xlink:href="img/icons/stack.svg#social-pinterest-icon"></use>
+                </svg>
+                <span class="visually-hidden">Pinterest</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Одноклассники">
+                <svg width="20" height="20">
+                  <use xlink:href="img/icons/stack.svg#social-ok-icon"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
 
-    <!--СОЦ.СЕТИ-->
-    <section class="main-footer__social socials">
-      <div class="socials__wrapper">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="main-footer__social-list socials__list">
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Вконтакте">
-              <svg width="28" height="23">
-                <use xlink:href="img/icons/stack.svg#social-vk-icon"></use>
-              </svg>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
+    <!--НАВИГАЦИЯ-->
+    <section class="main-footer__inner main-footer__shop navigation-footer section-frame">
+      <div class="navigation-footer__wrapper">
+        <h2 class="navigation-footer__title title-footer">Интернет-магазин</h2>
+        <ul class="navigation-footer__list">
+          <li class="navigation-footer__item">
+            <a class="navigation-footer__link" href="#catalog">Каталог</a>
           </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Pinterest">
-              <svg width="28" height="23">
-                <use xlink:href="img/icons/stack.svg#social-pinterest-icon"></use>
-              </svg>
-              <span class="visually-hidden">Pinterest</span>
-            </a>
+          <li class="navigation-footer__item">
+            <a class="navigation-footer__link" href="#delivery">Доставка</a>
           </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#" aria-label="Одноклассники">
-              <svg width="28" height="23">
-                <use xlink:href="img/icons/stack.svg#social-ok-icon"></use>
-              </svg>
-              <span class="visually-hidden">Одноклассники</span>
-            </a>
+          <li class="navigation-footer__item">
+            <a class="navigation-footer__link" href="#payments">Способы оплаты</a>
+          </li>
+          <li class="navigation-footer__item">
+            <a class="navigation-footer__link" href="#about">О нас</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <!--НАВИГАЦИЯ-->
-    <section class="main-footer__e-shop e-shop">
-      <h2 class="main-footer__title">Интернет-магазин</h2>
-      <ul class="main-footer__navigation-list navigation-list navigation-list--e-shop">
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#catalog">Каталог</a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#delivery">Доставка</a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#payments">Способы оплаты</a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="navigation-list__link" href="#about">О нас</a>
-        </li>
-      </ul>
-    </section>
-
     <!--МЕДИА-->
-    <section class="main-footer__media media">
-      <div class="media__wrapper">
-        <h2 class="main-footer__title">Медиа</h2>
-        <ul class="main-footer__navigation-list navigation-list navigation-list--media">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Блог</a>
+    <section class="main-footer__inner main-footer__media navigation-footer section-frame">
+      <div class="navigation-footer__wrapper">
+        <h2 class="navigation-footer__title title-footer">Медиа</h2>
+        <ul class="navigation-footer__list">
+          <li class="navigation-footer__item">
+            <a class="navigation-footer__link" href="#">Блог</a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Информация для СМИ</a>
+          <li class="navigation-footer__item">
+            <a class="navigation-footer__link" href="#">Информация для СМИ</a>
           </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">Правовая информация</a>
+          <li class="navigation-footer__item">
+            <a class="navigation-footer__link" href="#">Правовая информация</a>
           </li>
         </ul>
       </div>
     </section>
 
     <!--КОНТАКТЫ-->
-    <section class="main-footer__contacts contacts">
+    <section class="main-footer__inner main-footer__contacts contacts section-frame">
       <div class="contacts__wrapper">
-        <h2 class="main-footer__title">Контакты</h2>
+        <h2 class="main-footer__title title-footer">Контакты</h2>
         <dl class="contacts__address">
           <div class="contacts__address-inner">
             <dt class="contacts__address-title visually-hidden">Адрес</dt>
@@ -93,8 +99,8 @@
           </div>
           <div class="contacts__address-inner">
             <dt class="contacts__address-title visually-hidden">Телефон</dt>
-            <dd class="contacts__address-value">
-              <a class="contacts__address-link contacts__address-link--phone" href="tel:+7(999)999-99-9">+7 (999) 999-99-99</a>
+            <dd class="contacts__address-value contacts__address-value--phone">
+              <a class="contacts__address-link" href="tel:+7(999)999-99-9">+7 (999) 999-99-99</a>
             </dd>
           </div>
         </dl>
@@ -102,12 +108,12 @@
     </section>
 
     <!--COPYRIGHT-->
-    <section class="main-footer__copyright copyright">
+    <section class="main-footer__inner main-footer__copyright copyright section-frame">
       <div class="copyright__wrapper">
         <h2 class="visually-hidden">Доступные ссылки</h2>
-        <span class="copyright__text">Разработано в <b>HTMLAcademy</b></span>
+        <span class="copyright__text">Разработано в HTMLAcademy</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTML Academy: ведёт на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».">
-          <svg width="38" height="38">
+          <svg width="12" height="16">
             <use xlink:href="img/icons/stack.svg#htmlacademy-icon"></use>
           </svg>
         </a>

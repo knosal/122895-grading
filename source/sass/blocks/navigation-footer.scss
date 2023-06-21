@@ -1,0 +1,26 @@
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+
+
+.navigation-footer__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px;
+
+  @include ul-reset;
+}
+
+.navigation-footer__item {
+  padding: 8px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.navigation-footer_link {
+  color: $baseColors-black;
+  text-transform: uppercase;
+}

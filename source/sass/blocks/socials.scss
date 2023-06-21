@@ -1,0 +1,25 @@
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+}
+
+.socials__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 0;
+
+  @include ul-reset;
+}
+
+.socials__item {
+  padding: 10px;
+}

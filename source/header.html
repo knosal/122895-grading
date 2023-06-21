@@ -3,17 +3,19 @@
     <!--НАВИГАЦИЯ-->
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <!--ЛОГОТИП-->
-      <div class="main-header__logo-inner">
-        <a class="main-header__link-logo logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип интернет-магазина кофейных напитков">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop-icon.svg" width="149" height="72" />
-            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet-icon.svg" width="113" height="46" />
-            <img src="img/svg/logo-mobile-icon.svg" srcset="img/svg/logo-mobile-icon.svg" width="86" height="35" alt="Логотип интернет-магазин игрушек: Мишка" />
-          </picture>
-          <span class="visually-hidden">На главную</span>
-        </a>
-        <span class="main-header__promo promo">Интернет-магазин кофейных напитков Drink2Go</span>
+      <div class="main-header__logo logo">
+        <div class="logo__inner logo__inner--header">
+          <a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Drink2Go ">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/svg/logo-full-icon.svg" width="149" height="72" />
+              <source media="(min-width: 768px)" srcset="img/svg/logo-full-icon.svg" width="113" height="46" />
+              <img src="img/svg/logo-short-icon.svg" srcset="img/svg/logo-short-icon.svg" width="86" height="35" alt="Логотип Drink2Go" />
+            </picture>
+          </a>
+          <span class="logo__promo logo__promo--header">Интернет-магазин кофейных напитков</span>
+        </div>
       </div>
+
       <!--МЕНЮ-->
       <button class="main-navigation__toogle" type="button" aria-label="Открыть меню"></button>
       <div class="main-navigation__inner-popover">

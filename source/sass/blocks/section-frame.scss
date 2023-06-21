@@ -1,0 +1,9 @@
+@import "../global/variables.scss";
+
+.section-frame {
+  border-bottom: 1px solid $baseColors-secondary;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
