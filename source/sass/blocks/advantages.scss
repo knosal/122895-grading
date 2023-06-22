@@ -1,0 +1,105 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.advantages {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: $baseColors-white;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__title {
+  order: 2;
+  margin: 0;
+  margin-bottom: 36px;
+
+  text-align: center;
+
+  @include title(24px, 36px);
+}
+
+.advantages__bange {
+  order: 1;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  order: 3;
+
+  @include ul-reset;
+}
+
+.advantages__item {
+  position: relative;
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 52px;
+    height: 56px;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  &--speed:before {
+      background-image: url("../../img/svg/speed-icon.svg");
+  }
+
+  &--fit:before {
+    background-image: url("../../img/svg/fit-icon.svg");
+  }
+
+  &--energy:before {
+    background-image: url("../../img/svg/energy-icon.svg");
+  }
+
+  &--ecology:before {
+    background-image: url("../../img/svg/ecology-icon.svg");
+  }
+}
+
+.advantages__subtitle {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.advantages__text {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+

@@ -9,7 +9,6 @@
 }
 
 .main-container__novelty {
-
   @media (min-width: $tablet-width) {
     @include wrapper-tablet;
 
@@ -24,7 +23,6 @@
 
 .main-container__advantages {
   @include wrapper-mobile;
-
 
   @media (min-width: $tablet-width) {
     @include wrapper-tablet;
