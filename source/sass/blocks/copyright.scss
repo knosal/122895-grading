@@ -4,14 +4,15 @@
 
 .copyright__wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
   margin-right: 4px;
-  color: $baseColors-grey;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  color: $baseColors-grey;
 }

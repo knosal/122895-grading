@@ -14,9 +14,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     justify-content: stretch;
-    column-gap: 30px;
+
     grid-template-columns: minmax(223px, 1fr) minmax(222px, 1fr) minmax(223px, 1fr);
     grid-template-rows: auto auto auto;
+    column-gap: 30px;
     row-gap: 30px;
     grid-template-areas:
       "socials socials socials"
@@ -28,11 +29,12 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+    justify-content: stretch;
+
     grid-template-columns: minmax(223px, 1fr) minmax(223px, 1fr) minmax(222px, 1fr) minmax(223px, 1fr);
     grid-template-rows: auto auto;
-    row-gap: 20px;
-    justify-content: stretch;
     column-gap: 30px;
+    row-gap: 20px;
     grid-template-areas:
       "socials shop media contacts"
       "copyright copyright copyright copyright";
@@ -52,22 +54,25 @@
 
 .main-footer__socials-logo {
   position: relative;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     margin-top: 42px;
+
     grid-area: socials;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0;
+    align-items: flex-start;
     min-width: 318px;
+    margin: 0;
+
     gap: 30px;
   }
 }
@@ -76,6 +81,7 @@
   @media (min-width: $tablet-width) {
     min-width: 223px;
     max-width: 317px;
+
     grid-area: shop;
   }
 }
@@ -83,6 +89,7 @@
 .main-footer__media {
   @media (min-width: $tablet-width) {
     min-width: 222px;
+
     grid-area: media;
   }
 }
@@ -90,6 +97,7 @@
 .main-footer__contacts {
   @media (min-width: $tablet-width) {
     min-width: 223px;
+
     grid-area: contacts;
   }
 }
@@ -97,6 +105,7 @@
 .main-footer__copyright {
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+
     grid-area: copyright;
   }
 }
