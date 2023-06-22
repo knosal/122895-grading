@@ -1,0 +1,50 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+
+.navigation-list {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include ul-reset;
+}
+
+.navigation-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid $baseColors-secondary;
+  background-color: $baseColors-white;
+
+  &:first-child {
+    border-top: 1px solid $baseColors-secondary;
+  }
+}
+
+.navigation-list__link {
+  padding: 22px;
+  line-height: 0;
+  width: 100%;
+  text-align: center;
+
+  &:focus-within {
+    background-color: $baseColors-secondary;
+  }
+
+  &:active {
+    background-color: $baseColors-white;
+  }
+
+}
+
+
+.navigation-list__icon-text {
+  display: none;
+}

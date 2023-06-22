@@ -1,0 +1,29 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.main-header {
+  position: relative;
+  display: flex;
+  background-color: $baseColors-white;
+}
+
+.main-header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include wrapper-mobile;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 80px;
+
+    @include wrapper-tablet;
+  }
+}
+
+

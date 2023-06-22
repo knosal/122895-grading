@@ -6,11 +6,32 @@
 @import "global/visually-hidden.scss";
 
 /* BLOCKS */
-@import "blocks/main-footer.scss";
-@import "blocks/logo.scss";
-@import "blocks/socials.scss";
-@import "blocks/section-frame.scss";
-@import "blocks/navigation-footer.scss";
-@import "blocks/title-footer.scss";
-@import "blocks/contacts.scss";
-@import "blocks/copyright.scss";
+
+    /* HEADER */
+    @import "blocks/main-header.scss";
+    @import "blocks/main-navigation.scss";
+    @import "blocks/navigation-list.scss";
+    @import "blocks/main-user.scss";
+    @import "blocks/user-list.scss";
+
+    /* INDEX:NOVENTLY */
+
+  /* INDEX:ADVANTAGES */
+
+  /* INDEX:CATALOG */
+
+  /* INDEX:MAP */
+
+  /* FOOTER */
+  @import "blocks/main-footer.scss";
+  @import "blocks/logo.scss";
+  @import "blocks/socials.scss";
+  @import "blocks/navigation-footer.scss";
+  @import "blocks/contacts.scss";
+  @import "blocks/copyright.scss";
+
+  @import "blocks/section-frame.scss";
+  @import "blocks/title-footer.scss";
+
+
+

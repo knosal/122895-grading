@@ -1,0 +1,33 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.user-list {
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include ul-reset;
+}
+
+.user-list__link {
+  line-height: 0;
+  display: block;
+  padding: 21px;
+
+  &:focus-within,
+  &:active {
+    background-color: $baseColors-secondary;
+    outline: none;
+  }
+
+}
+
+
+.user-list__icon-text {
+  display: none;
+}

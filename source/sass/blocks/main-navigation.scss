@@ -1,0 +1,123 @@
+
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__wrapper {
+  display: flex;
+}
+
+.main-navigation__inner {
+  order: 2;
+  display: block;
+  @media (max-width: $mobile-width-only) {
+
+    &--closed .main-navigation__list {
+      display: none;
+    }
+
+    &--nojs .main-navigation__list {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
+}
+
+.main-navigation__toogle {
+  position: relative;
+  display: block;
+  width: 21px;
+  height: 21px;
+
+  @include button-reset;
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:focus-within,
+  &:active {
+    background-color: $baseColors-secondary;
+    outline: none;
+  }
+}
+
+.main-navigation__toogle-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  z-index: 10;
+}
+
+.main-navigation__inner--closed .main-navigation__toogle-icon--close {
+  display: none;
+}
+
+.main-navigation__inner--opened .main-navigation__toogle-icon--open {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__toogle {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__inner-popover {
+  @media (max-width: $mobile-width-only) {
+    position: static;
+
+    min-height: 0;
+  }
+}
+
+.main-navigation__inner-popover {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 63px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    grid-template-areas:
+      "user nav";
+    row-gap: 60px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 436px 1fr 80px 268px;
+    grid-template-areas:
+      "navs logo navu navu"
+      "navp promo promo promo";
+
+    @include wrapper-desktop;
+    width: auto;
+  }
+}
+
+.main-navigation__list {
+  @include ul-reset;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+  }
+}
