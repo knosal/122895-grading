@@ -5,8 +5,6 @@
 @import "../global/visually-hidden.scss";
 
 .advantages {
-  padding-top: 50px;
-  padding-bottom: 60px;
   background-color: $baseColors-white;
 }
 
@@ -25,72 +23,133 @@
   text-align: center;
 
   @include title(24px, 36px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+
+    @include title(42px, 64px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .advantages__bange {
   order: 1;
   margin: 0;
   margin-bottom: 4px;
-  margin-bottom: 4px;
 }
 
 .advantages__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 32px;
   order: 3;
 
   @include ul-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: repeat(auto-fill, minmax(339px, 1fr));
+    grid-template-rows: minmax(94px, auto) minmax(94px, auto);
+    column-gap: 34px;
+    row-gap: 50px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: minmax(318px, 1fr) minmax(317px, 1fr) minmax(318px, 1fr) minmax(317px, 1fr);
+    grid-template-rows: auto;
+    column-gap: 30px;
+  }
 }
 
 .advantages__item {
   position: relative;
-  margin-top: 66px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: -70px;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  &::before {
+    content: " ";
 
     display: block;
-    width: 52px;
+    width: 56px;
     height: 56px;
     margin: 0 auto;
 
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-right: 20px;
+    }
   }
 
-  &--speed:before {
-      background-image: url("../../img/svg/speed-icon.svg");
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
-  &--fit:before {
+  @media (min-width: 780px) {
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--speed::before {
+    background-image: url("../../img/svg/speed-icon.svg");
+  }
+
+  &--fit::before {
     background-image: url("../../img/svg/fit-icon.svg");
   }
 
-  &--energy:before {
+  &--energy::before {
     background-image: url("../../img/svg/energy-icon.svg");
   }
 
-  &--ecology:before {
+  &--ecology::before {
     background-image: url("../../img/svg/ecology-icon.svg");
+  }
+}
+
+.advantages__item-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
   }
 }
 
 .advantages__subtitle {
   margin: 0;
   margin-bottom: 4px;
+
+  @include title(18px, 32px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+
+    @include title(24px, 36px);
+  }
 }
 
 .advantages__text {
@@ -101,5 +160,19 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-}
+  white-space: pre-wrap;
 
+  @media (min-width: $tablet-width) {
+    max-width: 267px;
+
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 317px;
+
+    text-align: center;
+  }
+}

@@ -8,44 +8,33 @@
   flex-grow: 1;
 }
 
-.main-container__novelty {
-  @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
-
-  }
-
-  @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
-
-  }
-}
-
-
 .main-container__advantages {
   @include wrapper-mobile;
 
+  margin-top: 50px;
+  margin-bottom: 60px;
+
   @media (min-width: $tablet-width) {
     @include wrapper-tablet;
 
+    margin-top: 60px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
     @include wrapper-desktop;
 
+    margin-top: 100px;
+    margin-bottom: 120px;
   }
 }
 
 .main-container__catalog {
-
   @media (min-width: $tablet-width) {
     @include wrapper-tablet;
-
   }
 
   @media (min-width: $desktop-width) {
     @include wrapper-desktop;
-
   }
 }
-
-

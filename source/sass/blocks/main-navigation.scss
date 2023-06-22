@@ -5,21 +5,16 @@
 @import "../global/variables.scss";
 @import "../global/visually-hidden.scss";
 
-
 .main-navigation {
   display: flex;
   align-items: center;
 }
 
-.main-navigation__wrapper {
-  display: flex;
-}
-
 .main-navigation__inner {
   display: block;
   order: 2;
-  @media (max-width: $mobile-width-only) {
 
+  @media (max-width: $mobile-width-only) {
     &--closed .main-navigation__list {
       display: none;
     }
@@ -101,8 +96,7 @@
     display: grid;
     grid-template-columns: 1fr 140px;
     row-gap: 60px;
-    grid-template-areas:
-      "user nav";
+    grid-template-areas: "user nav";
 
     background-color: transparent;
   }

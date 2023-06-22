@@ -7,6 +7,7 @@
 
 .navigation-list {
   z-index: 10;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -20,8 +21,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid $baseColors-secondary;
+
   background-color: $baseColors-white;
+  border-bottom: 1px solid $baseColors-secondary;
 
   &:first-child {
     border-top: 1px solid $baseColors-secondary;
@@ -29,9 +31,10 @@
 }
 
 .navigation-list__link {
-  padding: 22px;
-  line-height: 0;
   width: 100%;
+  padding: 22px;
+
+  line-height: 0;
   text-align: center;
 
   &:focus-within {
@@ -41,9 +44,7 @@
   &:active {
     background-color: $baseColors-white;
   }
-
 }
-
 
 .navigation-list__icon-text {
   display: none;

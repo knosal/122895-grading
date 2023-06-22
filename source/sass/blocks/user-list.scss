@@ -15,18 +15,17 @@
 }
 
 .user-list__link {
-  line-height: 0;
   display: block;
   padding: 21px;
+
+  line-height: 0;
 
   &:focus-within,
   &:active {
     background-color: $baseColors-secondary;
     outline: none;
   }
-
 }
-
 
 .user-list__icon-text {
   display: none;
