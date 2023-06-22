@@ -1,0 +1,60 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+
+.button-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 137px;
+  padding: 8px 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $montserrat;
+  color: $baseColors-white;
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  @include button-reset;
+
+  &:hover,
+  &:focus-within {
+    color: $baseColors-white;
+
+    background-color: $altColors-primary-lighter;
+  }
+
+  &:active {
+    background-color: $altColors-primary-darker;
+  }
+
+
+
+  &--filled {
+    background-color: $baseColors-primary;
+
+    &:disabled {
+      background-color: $baseColors-grey;
+    }
+  }
+
+  &--empty {
+    color: $baseColors-primary;
+
+    background-color: $baseColors-white;
+
+    &:disabled {
+      background-color: $altColors-light-grey;
+    }
+  }
+}
+
+

@@ -1,0 +1,13 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.badge {
+  color: $baseColors-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  @include title(12px, 16px);
+}

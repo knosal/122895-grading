@@ -6,20 +6,23 @@
 
 .main-header {
   position: relative;
+
   display: flex;
+
   background-color: $baseColors-white;
 }
 
 .main-header__wrapper {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  @include wrapper-mobile;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     position: relative;
+
     height: 80px;
 
     @include wrapper-tablet;

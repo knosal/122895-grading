@@ -1,0 +1,30 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.cost {
+  display: inline-block;
+}
+
+.cost__price {
+  font-style: normal;
+  line-height: 32px;
+  font-family: $montserrat;
+}
+
+.cost__price--old {
+  margin-right: 6px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: $baseColors-primary;
+  text-decoration:line-through;
+}
+
+.cost__price--new {
+  font-weight: 600;
+  font-size: 20px;
+  color: $baseColors-black;
+}

@@ -1,0 +1,53 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-container__novelty {
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+
+  }
+}
+
+
+.main-container__advantages {
+  @include wrapper-mobile;
+
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+
+  }
+}
+
+.main-container__catalog {
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-tablet;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper-desktop;
+
+  }
+}
+
+

@@ -1,26 +1,28 @@
 /* GLOBAL */
-@import "global/fonts.scss";
-@import "global/mixins.scss";
-@import "global/reset.scss";
-@import "global/variables.scss";
-@import "global/visually-hidden.scss";
+  @import "global/fonts.scss";
+  @import "global/mixins.scss";
+  @import "global/reset.scss";
+  @import "global/variables.scss";
+  @import "global/visually-hidden.scss";
 
 /* BLOCKS */
+  /* HEADER */
+  @import "blocks/main-header.scss";
+  @import "blocks/main-navigation.scss";
+  @import "blocks/navigation-list.scss";
+  @import "blocks/main-user.scss";
+  @import "blocks/user-list.scss";
 
-    /* HEADER */
-    @import "blocks/main-header.scss";
-    @import "blocks/main-navigation.scss";
-    @import "blocks/navigation-list.scss";
-    @import "blocks/main-user.scss";
-    @import "blocks/user-list.scss";
-
+  /* INDEX */
+  @import "blocks/main-container.scss";
     /* INDEX:NOVENTLY */
+  @import "blocks/novelty-slider.scss";
+  @import "blocks/badge.scss";
+    /* INDEX:ADVANTAGES */
 
-  /* INDEX:ADVANTAGES */
+    /* INDEX:CATALOG */
 
-  /* INDEX:CATALOG */
-
-  /* INDEX:MAP */
+    /* INDEX:MAP */
 
   /* FOOTER */
   @import "blocks/main-footer.scss";
@@ -29,9 +31,9 @@
   @import "blocks/navigation-footer.scss";
   @import "blocks/contacts.scss";
   @import "blocks/copyright.scss";
-
   @import "blocks/section-frame.scss";
   @import "blocks/title-footer.scss";
 
 
-
+  @import "blocks/cost.scss";
+  @import "blocks/button-primary.scss";

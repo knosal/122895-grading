@@ -16,8 +16,8 @@
 }
 
 .main-navigation__inner {
-  order: 2;
   display: block;
+  order: 2;
   @media (max-width: $mobile-width-only) {
 
     &--closed .main-navigation__list {
@@ -36,12 +36,13 @@
 
 .main-navigation__toogle {
   position: relative;
+
   display: block;
   width: 21px;
   height: 21px;
+  padding: 30px;
 
   @include button-reset;
-  padding: 30px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -57,11 +58,13 @@
 .main-navigation__toogle-icon {
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 10;
+
   display: block;
   width: 18px;
   height: 18px;
-  z-index: 10;
+
+  transform: translate(-50%, -50%);
 }
 
 .main-navigation__inner--closed .main-navigation__toogle-icon--close {
@@ -86,18 +89,21 @@
 
 .main-navigation__inner-popover {
   position: absolute;
-  z-index: 10;
-  width: 100%;
-  top: 63px;
+  top: 60px;
   left: 0;
+  z-index: 10;
+
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     position: relative;
+
     display: grid;
     grid-template-columns: 1fr 140px;
+    row-gap: 60px;
     grid-template-areas:
       "user nav";
-    row-gap: 60px;
+
     background-color: transparent;
   }
 
@@ -106,18 +112,20 @@
     grid-template-areas:
       "navs logo navu navu"
       "navp promo promo promo";
+    width: auto;
 
     @include wrapper-desktop;
-    width: auto;
   }
 }
 
 .main-navigation__list {
-  @include ul-reset;
   width: 100%;
+
+  @include ul-reset;
 
   @media (min-width: $tablet-width) {
     position: relative;
+
     display: flex;
   }
 }
