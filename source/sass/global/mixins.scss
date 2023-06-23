@@ -4,19 +4,21 @@
 @mixin link-reset {
   color: $baseColors-black;
   text-decoration: none;
+
   cursor: pointer;
 }
 
 @mixin button-reset {
-  outline: 0;
-  border: none;
   background-color: transparent;
+  border: none;
+  outline: 0;
   cursor: pointer;
 }
 
 @mixin ul-reset {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -29,6 +31,7 @@
 @mixin fieldset-reset {
   margin: 0;
   padding: 0;
+
   border: 0;
 
   appearance: none;
@@ -36,25 +39,25 @@
 
 // VIEWPORTS
 @mixin wrapper-mobile($size: $mobile-width-only) {
-  margin: 0 auto;
   width: calc(100% - 40px);
+  margin: 0 auto;
 }
 
 @mixin wrapper-tablet($size: $tablet-width) {
-  margin: 0 auto;
   width: calc(100% - 40px);
+  margin: 0 auto;
 }
 
 @mixin wrapper-desktop($size: $desktop-width) {
-  margin: 0 auto;
-  max-width: 1440px;
   width: calc(100% - 80px);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 // TITLE
 @mixin title($f-size: 18px, $l-height: 32px) {
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
   font-size: $f-size;
   line-height: $l-height;
 }

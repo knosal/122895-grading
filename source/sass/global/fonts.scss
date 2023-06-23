@@ -1,44 +1,49 @@
 @font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-Regular.woff2") format("woff2"),
-    url("Montserrat-Regular.woff") format("woff");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  font-family: "Montserrat";
+
+  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../../fonts/Montserrat-Regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-Medium.woff2") format("woff2"),
-    url("Montserrat-Medium.woff") format("woff");
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
+  font-family: "Montserrat";
+
+  src: url("../../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../../fonts/Montserrat-Medium.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-SemiBold.woff2") format("woff2"),
-    url("Montserrat-SemiBold.woff") format("woff");
+  font-style: normal;
   font-weight: 600;
-  font-style: normal;
+  font-family: "Montserrat";
+
+  src: url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../../fonts/Montserrat-SemiBold.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-Bold.woff2") format("woff2"),
-    url("Montserrat-Bold.woff") format("woff");
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
+  font-family: "Montserrat";
+
+  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../../fonts/Montserrat-Bold.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-ExtraBold.woff2") format("woff2"),
-    url("Montserrat-ExtraBold.woff") format("woff");
-  font-weight: 800;
   font-style: normal;
+  font-weight: 800;
+  font-family: "Montserrat";
+
+  src: url("../../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/Montserrat-ExtraBold.woff") format("woff");
   font-display: swap;
 }
