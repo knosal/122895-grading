@@ -1,0 +1,116 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.noUi-connects .noUi-connect {
+  height: 4px;
+
+  background: $altColors-primary-lighter;
+}
+
+.noUi-target {
+  height: 4px;
+
+  background: $altColors-light-grey;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}
+
+.noUi-handle {
+  background-color: $baseColors-white;
+  border-radius: 50%;
+  outline: 2px solid $altColors-primary-lighter;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -10px;
+
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+
+  &:focus-within,
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
+      left: 1px;
+
+      display: block;
+      width: 20px;
+      height: 20px;
+
+      background-color: rgba($altColors-primary-opacity, 0.25);
+      border-radius: 50%;
+
+      transition: 0.4s;
+    }
+  }
+
+  &:disabled {
+    background: $altColors-light-grey;
+  }
+}
+
+.noUi-horizontal .noUi-handle-lower {
+  right: -25px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
+
+  cursor: pointer;
+}
+
+.noUi-hover {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgba($altColors-primary-opacity, 0.25);
+    border-radius: 50%;
+
+    transition: 0.4s;
+  }
+}
+
+.noUi-active {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-color: $altColors-primary-lighter;
+    border-radius: 50%;
+
+    transition: 0.4s;
+  }
+}

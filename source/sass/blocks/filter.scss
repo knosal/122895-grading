@@ -1,0 +1,117 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.filter__inner-button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.filter__group {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+
+  &--range {
+    position: relative;
+
+    width: 100%;
+  }
+}
+
+.filter__group-inner {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    width: 10px;
+    height: 1px;
+
+    transform: translateX(0, -50%);
+  }
+}
+
+.filter__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filter__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 118px;
+  padding: 8px 10px;
+
+  text-align: center;
+
+  background: $baseColors-white;
+  border: 2px solid $altColors-primary-lighter;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $montserrat;
+    color: $baseColors-grey;
+  }
+
+  &:hover,
+  &:focus-within {
+    color: $baseColors-black;
+  }
+
+  &:active {
+    border-color: $altColors-primary-darker;
+    outline: none;
+
+    &::placeholder {
+      color: $baseColors-black;
+    }
+  }
+
+  &:disabled {
+    border-color: $altColors-light-grey;
+
+    &::placeholder {
+      color: $baseColors-grey;
+    }
+  }
+}
+
+.filter__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+
+  @include ul-reset;
+}

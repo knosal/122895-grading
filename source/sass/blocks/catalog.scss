@@ -1,0 +1,60 @@
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.catalog {
+  background-color: $backgroundColors-lightest-grey;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+
+  @include wrapper-mobile;
+}
+
+.catalog__title {
+  order: 2;
+  margin: 0;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  @include title(24px, 36px);
+
+  @media (min-width: $tablet-width) {
+    @include title(42px, 64px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 94px;
+  }
+}
+
+.catalog__badge {
+  order: 1;
+  margin: 0 auto;
+  margin-bottom: 4px;
+}
+
+.catalog__filter {
+  order: 3;
+  width: 100%;
+}
+
+.catalog__filter-form {
+  margin-bottom: 40px;
+}
+
+.catalog__product {
+  order: 4;
+}
+
+.catalog__pagination {
+  padding-bottom: 44px;
+}

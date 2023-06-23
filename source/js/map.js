@@ -7,8 +7,11 @@ const mapDisplay = () => {
   }).addTo(map);
 
   L.marker([59.96840, 30.31772]).addTo(map)
-  // .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-  // .openPopup();
 };
 
-export { mapDisplay };
+const mapDisplayNoJs = () => {
+  let mapNoJs = document.querySelector(".main-container__map-image");
+  mapNoJs.classList.add("main-container__map-image--js");
+}
+
+export { mapDisplay, mapDisplayNoJs };
