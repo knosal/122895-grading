@@ -230,8 +230,8 @@
           <!--АССОРТИМЕНТ-->
           <div class="catalog__product">
             <!--СОРТИРОВКА-->
-            <div class="catalog__product-sorting">
-              <form class="catalog__product-form sorting" action="#" method="get">
+            <div class="catalog__product-sorting sorting">
+              <form class="sorting__form" action="#" method="get">
                 <!--ВЫПАДАЮЩИЙ СПИСОК-->
                 <p class="sorting__title">Сортировка:</p>
                 <div class="sorting__inner" data-state="">
@@ -260,23 +260,25 @@
                       <img class="product__image" src="img/catalog/coffee-white.jpg" srcset="img/catalog/coffee-white@2x.jpg 2x" width="130" height="188" loading="lazy" alt="Декаф Флэт Уайт." />
                     </picture>
                   </a>
-                  <div class="product__info-inner">
+                  <div class="product__inner">
                     <a class="product__link-title" href="#description">
                       <h3 class="product__title">Декаф Флэт Уайт</h3>
                     </a>
                     <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                     <div class="product__price-wrapper">
-                      <span class="product__price">225 ₽</span>
-                      <button class="product__button-buy button-filled button-filled--basket" type="button" aria-label="Добавить в корзину">
-                        <svg width="38" height="38">
-                          <use xlink:href="img/icons/stack.svg#add-card-icon"></use>
+                      <div class="product__price cost">
+                        <span class="cost__price cost__price--new">225₽</span>
+                      </div>
+                      <button class="product__button-buy button-primary button-primary--filled button-primary--basket" type="button" aria-label="Добавить в корзину">
+                        <svg width="20" height="16">
+                          <use xlink:href="img/icons/stack.svg#basket-add-icon"></use>
                         </svg>
-                        <span>В корзину</span>
+                        <span class="button-primary__text">В корзину</span>
                       </button>
                     </div>
                   </div>
                 </li>
-                <li class="catalog__item product">
+                <li class="product__item">
                   <a class="product__link-image" href="#description">
                     <picture>
                       <source type="image/webp" srcset="img/catalog/coffee-violet.webp 1x, img/catalog/coffee-violet@2x.webp 2x" />
@@ -289,17 +291,19 @@
                     </a>
                     <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                     <div class="product__price-wrapper">
-                      <span class="product__price">225 ₽</span>
-                      <button class="product__button-buy button-filled button-filled--basket" type="button" aria-label="Добавить в корзину">
-                        <svg width="38" height="38">
-                          <use xlink:href="img/icons/stack.svg#add-card-icon"></use>
+                      <div class="product__price cost">
+                        <span class="cost__price cost__price--new">225₽</span>
+                      </div>
+                      <button class="product__button-buy button-primary button-primary--filled button-primary--basket" type="button" aria-label="Добавить в корзину">
+                        <svg width="20" height="16">
+                          <use xlink:href="img/icons/stack.svg#basket-add-icon"></use>
                         </svg>
-                        <span>В корзину</span>
+                        <span class="button-primary__text">В корзину</span>
                       </button>
                     </div>
                   </div>
                 </li>
-                <li class="catalog__item product">
+                <li class="product__item">
                   <a class="product__link-image" href="#description">
                     <picture>
                       <source type="image/webp" srcset="img/catalog/coffee-black.webp 1x, img/catalog/coffee-black@2x.webp 2x" />
@@ -312,18 +316,95 @@
                     </a>
                     <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                     <div class="product__price-wrapper">
-                      <span class="product__price">225 ₽</span>
-                      <button class="product__button-buy button-filled button-filled--basket" type="button" aria-label="Добавить в корзину">
-                        <svg width="38" height="38">
-                          <use xlink:href="img/icons/stack.svg#add-card-icon"></use>
+                      <div class="product__price cost">
+                        <span class="cost__price cost__price--new">225₽</span>
+                      </div>
+                      <button class="product__button-buy button-primary button-primary--filled button-primary--basket" type="button" aria-label="Добавить в корзину">
+                        <svg width="20" height="16">
+                          <use xlink:href="img/icons/stack.svg#basket-add-icon"></use>
                         </svg>
-                        <span>В корзину</span>
+                        <span class="button-primary__text">В корзину</span>
                       </button>
                     </div>
                   </div>
                 </li>
 
                 <!--2ряд-->
+                <li class="product__item">
+                  <a class="product__link-image" href="#description">
+                    <picture>
+                      <source type="image/webp" srcset="img/catalog/coffee-pink.webp 1x, img/catalog/coffee-pink@2x.webp 2x" />
+                      <img class="product__image" src="img/catalog/coffee-pink.jpg" srcset="img/catalog/coffee-pink@2x.jpg 2x" width="130" height="188" loading="lazy" alt="Декаф Флэт Уайт." />
+                    </picture>
+                  </a>
+                  <div class="product__inner">
+                    <a class="product__link-title" href="#description">
+                      <h3 class="product__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <div class="product__price-wrapper">
+                      <div class="product__price cost">
+                        <span class="cost__price cost__price--new">225₽</span>
+                      </div>
+                      <button class="product__button-buy button-primary button-primary--filled button-primary--basket" type="button" aria-label="Добавить в корзину">
+                        <svg width="20" height="16">
+                          <use xlink:href="img/icons/stack.svg#basket-add-icon"></use>
+                        </svg>
+                        <span class="button-primary__text">В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__item">
+                  <a class="product__link-image" href="#description">
+                    <picture>
+                      <source type="image/webp" srcset="img/catalog/coffee-brown.webp 1x, img/catalog/coffee-brown@2x.webp 2x" />
+                      <img class="product__image" src="img/catalog/coffee-brown.jpg" srcset="img/catalog/coffee-brown@2x.jpg 2x" width="130" height="188" loading="lazy" alt="Декаф Флэт Уайт." />
+                    </picture>
+                  </a>
+                  <div class="product__info-inner">
+                    <a class="product__link-title" href="#description">
+                      <h3 class="product__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <div class="product__price-wrapper">
+                      <div class="product__price cost">
+                        <span class="cost__price cost__price--new">225₽</span>
+                      </div>
+                      <button class="product__button-buy button-primary button-primary--filled button-primary--basket" type="button" aria-label="Добавить в корзину">
+                        <svg width="20" height="16">
+                          <use xlink:href="img/icons/stack.svg#basket-add-icon"></use>
+                        </svg>
+                        <span class="button-primary__text">В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__item">
+                  <a class="product__link-image" href="#description">
+                    <picture>
+                      <source type="image/webp" srcset="img/catalog/coffee-yellow.webp 1x, img/catalog/coffee-yellow@2x.webp 2x" />
+                      <img class="product__image" src="img/catalog/coffee-yellow.jpg" srcset="img/catalog/coffee-yellow@2x.jpg 2x" width="130" height="188" loading="lazy" alt="Декаф Флэт Уайт." />
+                    </picture>
+                  </a>
+                  <div class="product__info-inner">
+                    <a class="product__link-title" href="#description">
+                      <h3 class="product__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="product__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                    <div class="product__price-wrapper">
+                      <div class="product__price cost">
+                        <span class="cost__price cost__price--new">225₽</span>
+                      </div>
+                      <button class="product__button-buy button-primary button-primary--filled button-primary--basket" type="button" aria-label="Добавить в корзину">
+                        <svg width="20" height="16">
+                          <use xlink:href="img/icons/stack.svg#basket-add-icon"></use>
+                        </svg>
+                        <span class="button-primary__text">В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
 
                 <!--3ряд-->
               </ul>
