@@ -9,13 +9,17 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-}
 
-.filter__inner-button {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 223px 222px 223px;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+    row-gap: 40px;
+    grid-template-areas:
+      "range radio checkbox"
+      ". button .";
+  }
 }
 
 .filter__group {
@@ -29,6 +33,23 @@
     position: relative;
 
     width: 100%;
+
+    grid-area: range;
+  }
+
+  &--radio {
+    grid-area: radio;
+  }
+
+  &--checkbox {
+    grid-area: checkbox;
+  }
+
+  &--button {
+    display: flex;
+    align-items: center;
+
+    grid-area: button;
   }
 }
 
@@ -114,4 +135,15 @@
   width: 100%;
 
   @include ul-reset;
+}
+
+.filter__inner-button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }

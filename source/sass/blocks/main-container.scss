@@ -29,16 +29,6 @@
   }
 }
 
-.main-container__catalog {
-  @media (min-width: $tablet-width) {
-    @include wrapper-tablet;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include wrapper-desktop;
-  }
-}
-
 .main-container__map-image {
   width: 100%;
 }

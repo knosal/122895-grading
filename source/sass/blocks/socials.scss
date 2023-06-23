@@ -23,4 +23,17 @@
 
 .socials__item {
   padding: 10px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  &:focus-within,
+  &:hover {
+    background-color: $baseColors-secondary;
+    border-radius: 4px;
+    filter: none;
+  }
+
+  &:active {
+    background-color: rgba($altColors-primary-opacity, 0.25);
+  }
 }

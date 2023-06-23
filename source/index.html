@@ -220,7 +220,7 @@
                 </ul>
               </fieldset>
 
-              <div class="filter__inner-button">
+              <div class="filter__group--button filter__inner-button">
                 <button class="filter__button button-primary button-primary--filled button-primary--grow" type="submit">Применить</button>
                 <button class="filter__button button-primary button-primary--empty button-primary--grow" type="reset">Сбросить</button>
               </div>
@@ -408,37 +408,36 @@
 
                 <!--3ряд-->
               </ul>
-
-              <!--ПОСТРАНИЧНАЯ НАВИГАЦИЯ-->
-              <div class="catalog__pagination pagination">
-                <ul class="pagination__list">
-                  <li class="pagination__item" tabindex="0">
-                    <a class="pagination__button" type="button" aria-label="Назад">
-                      <span class="pagination__button-text visually-hidden">Назад</span>
-                      <svg width="10" height="10">
-                        <use xlink:href="img/icons/stack.svg#arrow-left-icon"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#">1</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link pagination__link--active" href="#">2</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#">3</a>
-                  </li>
-                  <li class="pagination__item" tabindex="0">
-                    <a class="pagination__button" type="button" aria-label="Вперед">
-                      <span class="pagination__button-text visually-hidden">Вперед</span>
-                      <svg width="10" height="10">
-                        <use xlink:href="img/icons/stack.svg#arrow-rigth-icon"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            </div>
+            <!--ПОСТРАНИЧНАЯ НАВИГАЦИЯ-->
+            <div class="catalog__product-pagination pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item" tabindex="0">
+                  <a class="pagination__button" type="button" aria-label="Назад">
+                    <span class="pagination__button-text">Назад</span>
+                    <svg class="pagination__button-icon" width="10" height="10">
+                      <use xlink:href="img/icons/stack.svg#arrow-left-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item pagination__item--active">
+                  <a class="pagination__link pagination__link--active" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item" tabindex="0">
+                  <a class="pagination__button" type="button" aria-label="Вперед">
+                    <span class="pagination__button-text">Вперед</span>
+                    <svg class="pagination__button-icon" width="10" height="10">
+                      <use xlink:href="img/icons/stack.svg#arrow-rigth-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .sorting__title {
@@ -27,6 +31,11 @@
   width: 165px;
   height: 40px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    margin: 0;
+  }
 
   &[data-state="active"] {
     .sorting__active {
