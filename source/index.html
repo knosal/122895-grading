@@ -233,18 +233,22 @@
             <div class="catalog__product-sorting">
               <form class="catalog__product-form sorting" action="#" method="get">
                 <!--ВЫПАДАЮЩИЙ СПИСОК-->
-                <fieldset class="sorting__group sorting__group--select">
-                  <legend class="sorting__legend sorting__title">Сортировка:</legend>
-                  <select class="sorting__control" aria-label="Сортировка">
-                    <option class="sorting__control-link" value="default" selected>по умолчанию</option>
-                    <option class="sorting__control-link" value="expensive">сначала дорогие</option>
-                    <option class="sorting__control-link" value="inexpensive">сначала дешёвые</option>
-                    <option class="sorting__control-link" value="popularity">высокий рейтинг</option>
-                  </select>
-                </fieldset>
+                <p class="sorting__title">Сортировка:</p>
+                <div class="sorting__inner" data-state="">
+                  <div class="sorting__active"></div>
+                  <div class="sorting__content">
+                    <input id="singleSelect0" class="sorting__input" type="radio" name="singleSelect" checked />
+                    <label for="singleSelect0" tabindex="0" class="sorting__label" data-value="по умолчанию"></label>
+                    <input id="singleSelect1" class="sorting__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect1" tabindex="0" class="sorting__label" data-value="сначала дорогие"></label>
+                    <input id="singleSelect3" class="sorting__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect3" tabindex="0" class="sorting__label" data-value="сначала дешёвые"></label>
+                    <input id="singleSelect4" class="sorting__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect4" tabindex="0" class="sorting__label" data-value="высокий рейтинг"></label>
+                  </div>
+                </div>
               </form>
             </div>
-
             <!--КАРТОЧКИ-ТОВАРА-->
             <div class="catalog__product-inner product">
               <ul class="product__list">
