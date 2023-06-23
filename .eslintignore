@@ -1,1 +1,3 @@
-source/leaflet
+libs/*
+leaflet/*
+nouislider/*
