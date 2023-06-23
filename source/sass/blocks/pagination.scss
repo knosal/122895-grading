@@ -1,0 +1,56 @@
+
+@import "../global/fonts.scss";
+@import "../global/mixins.scss";
+@import "../global/reset.scss";
+@import "../global/variables.scss";
+@import "../global/visually-hidden.scss";
+
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include ul-reset;
+}
+.pagination__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+
+  background-color: $baseColors-white;
+}
+.pagination__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.pagination__link {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $baseColors-primary;
+
+  background-color: $baseColors-white;
+  border-radius: 4px;
+
+  &--active {
+    font-weight: 600;
+    color: $baseColors-black;
+
+    background-color: $backgroundColors-lightest-grey;
+  }
+}
+

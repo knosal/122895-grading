@@ -412,8 +412,13 @@
               <!--ПОСТРАНИЧНАЯ НАВИГАЦИЯ-->
               <div class="catalog__pagination pagination">
                 <ul class="pagination__list">
-                  <li class="pagination__item">
-                    <a class="pagination__button button-filled button-filled--empty" href="#"><span>Назад</span></a>
+                  <li class="pagination__item" tabindex="0">
+                    <a class="pagination__button" type="button" aria-label="Назад">
+                      <span class="pagination__button-text visually-hidden">Назад</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/icons/stack.svg#arrow-left-icon"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">1</a>
@@ -424,8 +429,13 @@
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">3</a>
                   </li>
-                  <li class="pagination__item">
-                    <a class="pagination__button button-filled button-filled--empty" href="#"><span>Вперед</span></a>
+                  <li class="pagination__item" tabindex="0">
+                    <a class="pagination__button" type="button" aria-label="Вперед">
+                      <span class="pagination__button-text visually-hidden">Вперед</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/icons/stack.svg#arrow-rigth-icon"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
