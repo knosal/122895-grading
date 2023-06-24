@@ -24,8 +24,12 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
+
   }
 }
 
@@ -83,33 +87,16 @@
 }
 
 .main-navigation__inner-popover {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  z-index: 10;
 
-  width: 100%;
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-
-    display: grid;
-    grid-template-columns: 1fr 140px;
-    row-gap: 60px;
-    grid-template-areas: "user nav";
-
-    background-color: transparent;
+    width: 100%;
   }
 
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 436px 1fr 80px 268px;
-    grid-template-areas:
-      "navs logo navu navu"
-      "navp promo promo promo";
-    width: auto;
-
-    @include wrapper-desktop;
-  }
 }
 
 .main-navigation__list {

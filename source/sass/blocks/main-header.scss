@@ -32,4 +32,8 @@
 
 .main-header__navigation {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+   gap: 60px;
+  }
 }

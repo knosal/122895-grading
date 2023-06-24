@@ -12,6 +12,10 @@
   align-items: center;
 
   @include ul-reset;
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
 }
 
 .user-list__link {
@@ -25,8 +29,21 @@
     background-color: $baseColors-secondary;
     outline: none;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 129px;
+    padding: 32px 22px;
+  }
 }
 
 .user-list__icon-text {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: 8px;
+  }
 }
