@@ -15,23 +15,53 @@
 .main-header__wrapper {
   position: relative;
 
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
+  grid-template-columns: 60px 1fr 60px;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "logo user burger"
+    "nav nav nav";
   width: 100%;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     height: 80px;
 
     @include wrapper-tablet;
   }
 }
 
+.main-header__logo {
+  margin-left: 20px;
+
+  grid-area: logo;
+
+  @media (min-width: $tablet-width) {
+   margin: 0;
+  }
+}
+
+.main-header__user {
+  margin-left: auto;
+
+  grid-area: user;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    }
+}
+
 .main-header__navigation {
   display: flex;
+
+  grid-area: nav;
 
   @media (min-width: $tablet-width) {
    gap: 60px;

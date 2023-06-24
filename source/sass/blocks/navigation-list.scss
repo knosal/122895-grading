@@ -46,15 +46,33 @@
   width: 100%;
   padding: 22px;
 
-  line-height: 0;
+  font-weight: 500;
+  line-height: 16px;
   text-align: center;
+  color: $baseColors-black;
+  text-transform: uppercase;
+  letter-spacing: 2;
 
+  background-color: $baseColors-white;
+
+  &:hover,
   &:focus-within {
-    background-color: $baseColors-secondary;
+    color: $baseColors-primary;
+
+    outline: none;
   }
 
   &:active {
-    background-color: $baseColors-white;
+    color: $baseColors-primary;
+
+    background-color: $baseColors-secondary;
+
+  }
+
+  &--current {
+    color: $baseColors-primary;
+
+    border-bottom: 2px solid $baseColors-primary;
   }
 
   @media (min-width: $tablet-width) {

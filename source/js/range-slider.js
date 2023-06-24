@@ -1,4 +1,7 @@
 const initRangeSlider = () => {
+  let filterRange = document.querySelector(".range__slider");
+  filterRange.classList.remove("range__slider--nojs");
+
   const rangeSlider = document.getElementById('range-slider');
 
   if (rangeSlider) {

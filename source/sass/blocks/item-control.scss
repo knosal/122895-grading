@@ -62,6 +62,9 @@
   }
 
   &:checked + .item-control__icon--checkbox {
+    background-color: $altColors-primary-opacity;
+    outline-color: none;
+
     &::before {
       transform: translateX(18px);
     }

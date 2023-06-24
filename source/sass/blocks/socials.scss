@@ -24,12 +24,12 @@
 .socials__item {
   padding: 10px;
 
+  border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   &:focus-within,
   &:hover {
     background-color: $baseColors-secondary;
-    border-radius: 4px;
     filter: none;
   }
 
@@ -37,3 +37,30 @@
     background-color: rgba($altColors-primary-opacity, 0.25);
   }
 }
+
+.socials__link {
+  display: block;
+
+  fill: $baseColors-grey;
+/*
+  &--vk:hover svg {
+    background-image: url("../../img/icons/social-vk-active-icon.svg");
+  }
+
+  &--vk:active svg {
+    background-color: #59d5bc;
+   background-image: url("../img/interior-active.svg");
+  }*/
+}
+
+.socials__link:hover,
+.socials__link:focus-within {
+  outline: none;
+  transform: translateY(-1px);
+
+  transition: all 0.3s ease;
+}
+
+
+
+

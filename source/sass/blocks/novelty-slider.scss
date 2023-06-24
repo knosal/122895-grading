@@ -19,6 +19,7 @@
   flex-grow: 1;
 
   @media (min-width: $desktop-width) {
+    justify-content: center;
     min-height: 714px;
   }
 }
@@ -48,6 +49,7 @@
     grid-template-areas:
       "img info"
       "slider slider";
+      margin: 0;
   }
 }
 

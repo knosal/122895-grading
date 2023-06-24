@@ -13,7 +13,10 @@
 .logo__link {
   @media (min-width: $desktop-width) {
     display: block;
-    margin-bottom: 10px;
+
+    &--footer {
+      margin-bottom: 10px;
+    }
   }
 }
 

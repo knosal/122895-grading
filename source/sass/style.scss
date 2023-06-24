@@ -5,6 +5,7 @@
 @import "global/variables.scss";
 @import "global/visually-hidden.scss";
 /* BLOCKS */
+@import "blocks/page.scss";
 /* HEADER */
 @import "blocks/main-header.scss";
 @import "blocks/main-navigation.scss";
@@ -39,3 +40,5 @@
 @import "blocks/cost.scss";
 @import "blocks/button-primary.scss";
 @import "blocks/item-control.scss";
+@import "blocks/slider-swiper.scss";
+@import "blocks/slider.scss"

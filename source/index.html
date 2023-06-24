@@ -220,7 +220,7 @@
                 </ul>
               </fieldset>
 
-              <div class="filter__group--button filter__inner-button">
+              <div class="filter__group filter__group-inner filter__group--button">
                 <button class="filter__button button-primary button-primary--filled button-primary--grow" type="submit">Применить</button>
                 <button class="filter__button button-primary button-primary--empty button-primary--grow" type="reset">Сбросить</button>
               </div>
@@ -412,13 +412,13 @@
             <!--ПОСТРАНИЧНАЯ НАВИГАЦИЯ-->
             <div class="catalog__product-pagination pagination">
               <ul class="pagination__list">
-                <li class="pagination__item" tabindex="0">
-                  <a class="pagination__button" type="button" aria-label="Назад">
+                <li class="pagination__item">
+                  <button class="pagination__button" type="button" aria-label="Назад">
                     <span class="pagination__button-text">Назад</span>
                     <svg class="pagination__button-icon" width="10" height="10">
                       <use xlink:href="img/icons/stack.svg#arrow-left-icon"></use>
                     </svg>
-                  </a>
+                  </button>
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__link" href="#">1</a>
@@ -429,13 +429,13 @@
                 <li class="pagination__item">
                   <a class="pagination__link" href="#">3</a>
                 </li>
-                <li class="pagination__item" tabindex="0">
-                  <a class="pagination__button" type="button" aria-label="Вперед">
+                <li class="pagination__item">
+                  <button class="pagination__button" type="button" aria-label="Вперед">
                     <span class="pagination__button-text">Вперед</span>
                     <svg class="pagination__button-icon" width="10" height="10">
                       <use xlink:href="img/icons/stack.svg#arrow-rigth-icon"></use>
                     </svg>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -462,6 +462,8 @@
 
     <script src="leaflet/leaflet.js"></script>
     <script src="nouislider/nouislider.min.js"></script>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider-swiper.js"></script>
     <script src="js/script.js" type="module"></script>
   </body>
 </html>

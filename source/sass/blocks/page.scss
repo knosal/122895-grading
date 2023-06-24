@@ -1,0 +1,18 @@
+@import "../global/fonts.scss";
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 1440px;
+  min-height: 100%;
+  margin: 0 auto;
+
+  font-family: $montserrat, "Arial", sans-serif;
+
+
+}

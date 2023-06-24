@@ -70,23 +70,16 @@
 }
 
 .filter__group-inner {
-  position: relative;
-
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 
-  &::before {
-    content: " ";
-    position: absolute;
-    top: 20%;
-    left: 50%;
-
-    width: 10px;
-    height: 1px;
-
-    transform: translateX(0, -50%);
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }
+
 
 .filter__range {
   @media (min-width: 600px) and (max-width: 767px) {
@@ -157,15 +150,4 @@
   width: 100%;
 
   @include ul-reset;
-}
-
-.filter__inner-button {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
 }
