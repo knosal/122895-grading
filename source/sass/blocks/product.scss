@@ -15,9 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
-    width: 316px;
-    min-height: 659px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -46,6 +45,15 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     width: 349px;
+    padding: 40px 30px 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    width: 317px;
+    min-height: 460px;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   }
 }
 

@@ -10,15 +10,31 @@
   align-items: flex-start;
   gap: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 600px) {
     display: grid;
-    grid-template-columns: 223px 222px 223px;
-    grid-template-rows: auto auto;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 223px);
+    grid-template-rows: auto auto auto;
     column-gap: 30px;
     row-gap: 40px;
     grid-template-areas:
+      "range range"
+      "radio checkbox"
+      "button button";
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 223px 222px 223px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
       "range radio checkbox"
       ". button .";
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -69,6 +85,12 @@
     height: 1px;
 
     transform: translateX(0, -50%);
+  }
+}
+
+.filter__range {
+  @media (min-width: 600px) and (max-width: 767px) {
+    grid-column: span 2;
   }
 }
 
