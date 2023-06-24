@@ -8,17 +8,18 @@
   min-height: 656px;
 
   background-color: $backgroundColors-flat-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .novelty-slider__wrapper {
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+  display: flex;
+  flex-grow: 1;
 
   @media (min-width: $desktop-width) {
-    margin-right: 40px;
-    margin-left: 40px;
+    min-height: 714px;
   }
 }
 
@@ -30,12 +31,36 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 600px auto ;
+    column-gap: 30px;
+    row-gap: 40px;
+    grid-template-areas:
+      "img info"
+      "slider slider";
+  }
 }
 
 .novelty-slider__about {
   display: flex;
   flex-direction: column;
   order: 2;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+
+    grid-area: info;
+  }
 }
 
 .novelty-slider__title {
@@ -47,6 +72,10 @@
   letter-spacing: 0.02em;
 
   @include title(36px, 48px);
+
+  @media (min-width: $tablet-width) {
+    @include title(56px, 80px);
+  }
 }
 
 .novelty-slider__subtitle {
@@ -67,6 +96,10 @@
   line-height: 20px;
   text-align: center;
   color: $baseColors-black;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .novelty-slider__order {
@@ -76,17 +109,45 @@
   gap: 20px;
   order: 4;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .novelty-slider__image {
   order: 1;
   margin-top: 20px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 25%;
+
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: auto;
+
+    display: block;
+    margin: 0;
+
+    grid-area: img;
+  }
 }
 
 .novelty-slider__pagination {
   display: none;
   order: 3;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    display: block;
+
+    grid-area: slider;
+  }
 }
 
 .novelty-slider__button-icon {
