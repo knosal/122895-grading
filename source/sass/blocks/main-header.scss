@@ -44,7 +44,7 @@
   grid-area: logo;
 
   @media (min-width: $tablet-width) {
-   margin: 0;
+    margin: 0;
   }
 }
 
@@ -55,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    }
+  }
 }
 
 .main-header__navigation {
@@ -64,6 +64,6 @@
   grid-area: nav;
 
   @media (min-width: $tablet-width) {
-   gap: 60px;
+    gap: 60px;
   }
 }

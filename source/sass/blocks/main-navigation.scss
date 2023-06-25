@@ -27,7 +27,6 @@
   @media (min-width: $tablet-width) {
     order: 1;
   }
-
 }
 
 .main-navigation__toogle {
@@ -82,7 +81,7 @@
   .main-navigation__inner-popover {
     position: relative;
     top: 0;
-}
+  }
 
   .main-navigation__toogle {
     display: none;
@@ -90,7 +89,6 @@
 }
 
 .main-navigation__inner-popover {
-
   @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 60px;

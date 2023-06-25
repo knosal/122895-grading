@@ -29,8 +29,8 @@
   @include ul-reset;
 
   @media (min-width: $tablet-width) {
-   flex-direction: row;
-   gap: 30px;
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -54,7 +54,7 @@
     width: 317px;
     min-height: 460px;
 
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
 }
 

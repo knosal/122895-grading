@@ -17,7 +17,6 @@
 
   @include wrapper-mobile;
 
-
   @media (min-width: $tablet-width) {
     padding-top: 80px;
     padding-bottom: 90px;
@@ -34,7 +33,6 @@
       "title title"
       "form icons";
   }
-
 }
 
 .catalog__title {
@@ -82,8 +80,6 @@
 
 .catalog__filter-form {
   margin-bottom: 40px;
-
-
 }
 
 .catalog__product {

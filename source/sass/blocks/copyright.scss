@@ -16,24 +16,22 @@
   line-height: 16px;
 }
 
-.copyright__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .copyright__link svg {
   fill: currentColor;
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: $baseColors-grey;
 
-  &:hover  {
-    color:  $baseColors-primary;
+  &:hover {
+    color: $baseColors-primary;
   }
 
-  &:active  {
+  &:active {
     color: $altColors-primary-darker;
   }
 }
