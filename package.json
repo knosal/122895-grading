@@ -7,6 +7,7 @@
     "autoprefixer": "10.4.13",
     "browser-sync": "2.27.10",
     "del": "7.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "4.0.2",
     "gulp-file-include": "^2.3.0",
     "gulp-html-bemlinter": "2.1.2",
@@ -39,7 +40,9 @@
     "lint": "npm run editorconfig && npm run stylelint && npm run w3c && npm run bemlinter",
     "start": "gulp runDev",
     "build": "gulp buildProd",
-    "preview": "gulp buildProd && gulp startServer"
+    "preview": "gulp buildProd && gulp startServer",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
