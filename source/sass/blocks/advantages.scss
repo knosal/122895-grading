@@ -25,7 +25,7 @@
   @include title(24px, 36px);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
 
     @include title(42px, 64px);
   }
@@ -58,7 +58,7 @@
     grid-template-columns: repeat(auto-fill, minmax(339px, 1fr));
     grid-template-rows: minmax(94px, auto) minmax(94px, auto);
     column-gap: 34px;
-    row-gap: 50px;
+    row-gap: 40px;
     width: 100%;
   }
 
@@ -141,6 +141,7 @@
 
 .advantages__subtitle {
   margin: 0;
+  margin-top: 10px;
   margin-bottom: 4px;
 
   @include title(18px, 32px);

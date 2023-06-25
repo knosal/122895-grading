@@ -69,7 +69,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 32px 20px;
+    padding: 32px 19px;
+
+    font-size: 12px;
+    line-height: 16px;
 
     &--current {
       color: $baseColors-primary;

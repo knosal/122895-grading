@@ -16,7 +16,7 @@
     grid-template-columns: repeat(2, 223px);
     grid-template-rows: auto auto auto;
     column-gap: 30px;
-    row-gap: 40px;
+    row-gap: 36px;
     grid-template-areas:
       "range range"
       "radio checkbox"
@@ -146,7 +146,7 @@
 .filter__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   width: 100%;
 
   @include ul-reset;

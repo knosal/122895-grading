@@ -23,13 +23,13 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 29px;
 
   @include ul-reset;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 30px;
+    gap: 25px;
   }
 }
 
@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px 20px 20px;
+  padding: 30px 20px 20px 20px;
 
   background-color: $baseColors-white;
   border-radius: 4px;
@@ -45,7 +45,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     width: 349px;
-    padding: 40px 30px 30px 30px;
+    padding: 55px 30px 30px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,15 +83,16 @@
 
   @include title(18px, 32px);
 
-
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    @include title(24px, 36px);
+    margin-top: 7px;
+    margin-bottom: 10px;
   }
 }
 
 .product__description {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 
   font-weight: 400;
   font-size: 14px;
@@ -99,6 +100,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
+    margin-bottom: 16px;
   }
 }
 
