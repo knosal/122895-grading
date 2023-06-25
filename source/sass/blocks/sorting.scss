@@ -178,7 +178,7 @@
 .popover__item .popover__link:focus {
   color: $baseColors-black;
 
-  background-color:  $baseColors-secondary;
+  background-color: $baseColors-secondary;
 }
 
 .popover__item .popover__link:active {
@@ -188,7 +188,7 @@
 }
 
 .popover__item > .popover__link--selected {
-  color:  $baseColors-white;
+  color: $baseColors-white;
 
   background-color: $baseColors-primary;
 }
