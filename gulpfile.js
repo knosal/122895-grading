@@ -94,8 +94,6 @@ export function copyAssets() {
     'source/*.ico',
     'source/*.webmanifest',
     'source/libs/**',
-    'source/leaflet/**',
-    'source/nouislider/**',
   ], {
     base: 'source'
   })
