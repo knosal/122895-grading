@@ -5,12 +5,11 @@
 @import "../global/visually-hidden.scss";
 
 .novelty-slider {
-  min-height: 656px;
-
   background-color: $backgroundColors-flat-white;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    min-height: 656px;
   }
 }
 
@@ -24,8 +23,43 @@
   }
 }
 
+.novelty-slider__inner {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+}
+
 .novelty-slider__list {
   display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--second {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background-color: $backgroundColors-lavender-latte;
+  }
+
+  &--third {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background-color: $backgroundColors-espresso;
+  }
 }
 
 .novelty-slider__content {
@@ -43,7 +77,7 @@
     justify-content: space-between;
     align-items: center;
     grid-template-columns: 600px 1fr;
-    grid-template-rows: 600px auto ;
+    grid-template-rows: 640px auto ;
     column-gap: 30px;
     row-gap: 40px;
     grid-template-areas:
@@ -76,6 +110,8 @@
   @include title(36px, 48px);
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+
     @include title(56px, 80px);
   }
 }
@@ -100,6 +136,13 @@
   color: $baseColors-black;
 
   @media (min-width: $tablet-width) {
+    max-width: 549px;
+
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }
@@ -124,13 +167,15 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 25%;
+    bottom: -180px;
 
     order: 3;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    top: auto;
+    position: relative;
+    top: 0;
 
     display: block;
     margin: 0;
@@ -153,21 +198,59 @@
 }
 
 .novelty-slider__button-icon {
+  fill: $baseColors-primary;
+
+  &:hover > svg {
+    fill: $baseColors-primary;
+  }
+
+  &:active > svg {
+    fill: $altColors-primary-darker;
+  }
+
+  &:disabled > svg {
+    fill: $altColors-primary-darker;
+  }
+}
+
+.novelty-slider__button-icon {
   width: 20px;
   padding: 0;
 
   @include button-reset;
 
-  &:focus-within,
-  &:hover {
-    background-color: $baseColors-white;
+  &--left {
+    &:focus-within,
+    &:hover {
+      background: linear-gradient(270deg, rgba($baseColors-white, 0) 0%, rgba($baseColors-white, 1) 100%);
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba($altColors-primary-opacity, 0.25) 0%, rgba($altColors-primary-opacity, 0) 100%);
+    }
   }
 
-  &:active {
-    background: linear-gradient(90deg, rgba($altColors-primary-opacity, 0.25) 0%, rgba($altColors-primary-opacity, 0) 100%);
+  &--rigth {
+    &:focus-within,
+    &:hover {
+      background: linear-gradient(90deg, rgba($baseColors-white, 0) 0%, rgba($baseColors-white, 1) 100%);
+    }
+
+    &:active {
+      background: linear-gradient(270deg, rgba($altColors-primary-opacity, 0.25) 0%, rgba($altColors-primary-opacity, 0) 100%);
+    }
+  }
+
+  &:disabled > svg {
+    fill: $baseColors-grey;
   }
 
   @media (min-width: $tablet-width) {
     width: 80px;
+
+    &:disabled > svg {
+      fill: currentColor;
+    }
+
   }
 }

@@ -11,69 +11,185 @@
       <!--СЛАЙДЕР-->
       <section class="main-container__novelty novelty-slider">
         <div class="novelty-slider__wrapper">
-          <!--1 слайд-->
-          <div class="novelty-slider__list novelty-slider__list--first">
-            <button class="novelty-slider__button-icon" type="button" aria-label="Предыдущая новинка" tabindex="0">
+          <div class="novelty-slider__inner">
+            <button class="novelty-slider__button-icon novelty-slider__button-icon--left" type="button" aria-label="Предыдущая новинка" tabindex="0">
               <span class="visually-hidden">Предыдущая новинка</span>
               <svg width="20" height="20">
                 <use xlink:href="img/icons/stack.svg#arrow-left-icon"></use>
               </svg>
             </button>
-            <div class="novelty-slider__content">
-              <!--ОПИСАНИЕ-->
-              <div class="novelty-slider__about">
-                <h2 class="novelty-slider__title">Декаф Флэт Уайт</h2>
-                <span class="novelty-slider__subtitle badge">Новинка!</span>
-                <p class="novelty-slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-                <div class="novelty-slider__order">
-                  <div class="novelty-slider__cost">
-                    <div class="cost">
-                      <span class="cost__price cost__price--old">295₽</span>
+
+            <!--1 слайд-->
+            <div class="novelty-slider__list novelty-slider__list--first">
+              <div class="novelty-slider__content">
+                <!--ОПИСАНИЕ-->
+                <div class="novelty-slider__about">
+                  <h2 class="novelty-slider__title">Декаф Флэт Уайт</h2>
+                  <span class="novelty-slider__subtitle badge">Новинка!</span>
+                  <p class="novelty-slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <div class="novelty-slider__order">
+                    <div class="novelty-slider__cost">
+                      <div class="cost">
+                        <span class="cost__price cost__price--old">295₽</span>
+                      </div>
+                      <div class="cost">
+                        <span class="cost__price cost__price--new">225₽</span>
+                      </div>
                     </div>
-                    <div class="cost">
-                      <span class="cost__price cost__price--new">225₽</span>
-                    </div>
+                    <a class="novelty-slider__button-buy button-primary button-primary--filled" href="#">Заказать</a>
                   </div>
-                  <a class="novelty-slider__button-buy button-primary button-primary--filled" href="#">Заказать</a>
+                </div>
+
+                <!--ФОТО-->
+                <div class="novelty-slider__image picture picture--active">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/flatwhite-desktop.webp 1x, img/slider/flatwhite-desktop@2x.webp 2x" width="600" height="600" />
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/flatwhite-tablet.webp 1x, img/slider/flatwhite-tablet@2x.webp 2x" width="476" height="476" />
+                    <source type="image/webp" srcset="img/slider/flatwhite-mobile.webp 1x, img/slider/flatwhite-mobile@2x.webp 2x" width="280" height="280" />
+
+                    <source media="(min-width: 1440px)" srcset="img/slider/flatwhite-desktop.png 1x, img/slider/flatwhite-desktop@2x.png 2x" width="600" height="600" />
+                    <source media="(min-width: 768px)" srcset="img/slider/flatwhite-tablet.png 1x, img/slider/flatwhite-tablet@2x.png 2x" width="476" height="476" />
+                    <img class="picture__image" src="img/slider/flatwhite-mobile.png" srcset="img/slider/flatwhite-mobile@2x.png 2x" width="280" height="280" alt="Напиток FlatWhite" />
+                  </picture>
+                </div>
+
+                <!--Навигация-->
+                <div class="novelty-slider__pagination pagination-slider">
+                  <ul class="pagination-slider__list">
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button pagination-slider__button--active" tabindex="0">
+                        <span class="visually-hidden">1 слайд</span>
+                      </button>
+                    </li>
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button" tabindex="0">
+                        <span class="visually-hidden">2 слайд</span>
+                      </button>
+                    </li>
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button" tabindex="0">
+                        <span class="visually-hidden">3 слайд</span>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </div>
+            </div>
+            <!--2 слайд-->
+            <div class="novelty-slider__list novelty-slider__list--second">
+              <div class="novelty-slider__content">
+                <!--ОПИСАНИЕ-->
+                <div class="novelty-slider__about">
+                  <h2 class="novelty-slider__title">Лавандовый Латте</h2>
+                  <span class="novelty-slider__subtitle badge">Новинка!</span>
+                  <p class="novelty-slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="novelty-slider__order">
+                    <div class="novelty-slider__cost">
+                      <div class="cost">
+                        <span class="cost__price cost__price--old">285₽</span>
+                      </div>
+                      <div class="cost">
+                        <span class="cost__price cost__price--new">265₽</span>
+                      </div>
+                    </div>
+                    <a class="novelty-slider__button-buy button-primary button-primary--filled" href="#">Заказать</a>
+                  </div>
+                </div>
 
-              <!--ФОТО-->
-              <div class="novelty-slider__image picture picture--active">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/flatwhite-desktop.webp 1x, img/slider/flatwhite-desktop@2x.webp 2x" width="600" height="600" />
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/flatwhite-tablet.webp 1x, img/slider/flatwhite-tablet@2x.webp 2x" width="476" height="476" />
-                  <source type="image/webp" srcset="img/slider/flatwhite-mobile.webp 1x, img/slider/flatwhite-mobile@2x.webp 2x" width="280" height="280" />
+                <!--ФОТО-->
+                <div class="novelty-slider__image picture picture--active">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/lavender-desktop.webp 1x, img/slider/lavender-desktop@2x.webp 2x" width="600" height="600" />
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/lavender-tablet.webp 1x, img/slider/lavender-tablet@2x.webp 2x" width="476" height="476" />
+                    <source type="image/webp" srcset="img/slider/lavender-mobile.webp 1x, img/slider/lavender-mobile@2x.webp 2x" width="280" height="280" />
 
-                  <source media="(min-width: 1440px)" srcset="img/slider/flatwhite-desktop.png 1x, img/slider/flatwhite-desktop@2x.png 2x" width="600" height="600" />
-                  <source media="(min-width: 768px)" srcset="img/slider/flatwhite-tablet.png 1x, img/slider/flatwhite-tablet@2x.png 2x" width="476" height="476" />
-                  <img class="picture__image" src="img/slider/flatwhite-mobile.png" srcset="img/slider/flatwhite-mobile@2x.png 2x" width="280" height="280" alt="Напиток FlatWhite" />
-                </picture>
+                    <source media="(min-width: 1440px)" srcset="img/slider/lavender-desktop.png 1x, img/slider/lavender-desktop@2x.png 2x" width="600" height="600" />
+                    <source media="(min-width: 768px)" srcset="img/slider/lavender-tablet.png 1x, img/slider/lavender-tablet@2x.png 2x" width="476" height="476" />
+                    <img class="picture__image" src="img/slider/lavender-mobile.png" srcset="img/slider/lavender-mobile@2x.png 2x" width="280" height="280" alt="Напиток lavender" />
+                  </picture>
+                </div>
+
+                <!--Навигация-->
+                <div class="novelty-slider__pagination pagination-slider">
+                  <ul class="pagination-slider__list">
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button pagination-slider__button--active" tabindex="0">
+                        <span class="visually-hidden">1 слайд</span>
+                      </button>
+                    </li>
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button" tabindex="0">
+                        <span class="visually-hidden">2 слайд</span>
+                      </button>
+                    </li>
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button" tabindex="0">
+                        <span class="visually-hidden">3 слайд</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
+            <!--3 слайд-->
+            <div class="novelty-slider__list novelty-slider__list--third">
+              <div class="novelty-slider__content">
+                <!--ОПИСАНИЕ-->
+                <div class="novelty-slider__about">
+                  <h2 class="novelty-slider__title">Тройной Эспрессо</h2>
+                  <span class="novelty-slider__subtitle badge">Новинка!</span>
+                  <p class="novelty-slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="novelty-slider__order">
+                    <div class="novelty-slider__cost">
+                      <div class="cost">
+                        <span class="cost__price cost__price--old">395₽</span>
+                      </div>
+                      2
+                      <div class="cost">
+                        <span class="cost__price cost__price--new">375₽</span>
+                      </div>
+                    </div>
+                    <a class="novelty-slider__button-buy button-primary button-primary--filled" href="#">Заказать</a>
+                  </div>
+                </div>
 
-              <!--Навигация-->
-              <div class="novelty-slider__pagination pagination-slider">
-                <ul class="pagination-slider__list">
-                  <li class="pagination-slider__item">
-                    <button class="pagination-slider__button pagination-slider__button--active" tabindex="0">
-                      <span class="visually-hidden">1 слайд</span>
-                    </button>
-                  </li>
-                  <li class="pagination-slider__item">
-                    <button class="pagination-slider__button" tabindex="0">
-                      <span class="visually-hidden">2 слайд</span>
-                    </button>
-                  </li>
-                  <li class="pagination-slider__item">
-                    <button class="pagination-slider__button" tabindex="0">
-                      <span class="visually-hidden">3 слайд</span>
-                    </button>
-                  </li>
-                </ul>
+                <!--ФОТО-->
+                <div class="novelty-slider__image picture picture--active">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/espresso-desktop.webp 1x, img/slider/espresso-desktop@2x.webp 2x" width="600" height="600" />
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/espresso-tablet.webp 1x, img/slider/espresso-tablet@2x.webp 2x" width="476" height="476" />
+                    <source type="image/webp" srcset="img/slider/espresso-mobile.webp 1x, img/slider/espresso-mobile@2x.webp 2x" width="280" height="280" />
+
+                    <source media="(min-width: 1440px)" srcset="img/slider/espresso-desktop.png 1x, img/slider/espresso-desktop@2x.png 2x" width="600" height="600" />
+                    <source media="(min-width: 768px)" srcset="img/slider/espresso-tablet.png 1x, img/slider/espresso-tablet@2x.png 2x" width="476" height="476" />
+                    <img class="picture__image" src="img/slider/espresso-mobile.png" srcset="img/slider/espresso-mobile@2x.png 2x" width="280" height="280" alt="Напиток lavender" />
+                  </picture>
+                </div>
+
+                <!--Навигация-->
+                <div class="novelty-slider__pagination pagination-slider">
+                  <ul class="pagination-slider__list">
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button pagination-slider__button--active" tabindex="0">
+                        <span class="visually-hidden">1 слайд</span>
+                      </button>
+                    </li>
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button" tabindex="0">
+                        <span class="visually-hidden">2 слайд</span>
+                      </button>
+                    </li>
+                    <li class="pagination-slider__item">
+                      <button class="pagination-slider__button" tabindex="0">
+                        <span class="visually-hidden">3 слайд</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <button class="novelty-slider__button-icon" type="button" aria-label="Следующая новинка" tabindex="0">
+            <button class="novelty-slider__button-icon novelty-slider__button-icon--rigth" type="button" aria-label="Следующая новинка" tabindex="0">
               <span class="visually-hidden">Следующая новинка</span>
               <svg width="20" height="20">
                 <use xlink:href="img/icons/stack.svg#arrow-rigth-icon"></use>

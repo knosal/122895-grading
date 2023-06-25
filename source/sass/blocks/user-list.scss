@@ -8,6 +8,7 @@
   z-index: 10;
 
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   align-items: center;
 
@@ -24,7 +25,7 @@
 
   font-weight: 500;
   line-height: 16px;
-  color: $baseColors-black;
+  color: inherit;
   text-transform: uppercase;
   letter-spacing: 2;
 

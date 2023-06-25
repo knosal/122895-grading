@@ -1,0 +1,52 @@
+
+.pagination-slider {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+
+    display: block;
+  }
+}
+
+.pagination-slider__list {
+  display: flex;
+  gap: 9px;
+
+  @include ul-reset;
+}
+
+.pagination-slider__button {
+  margin: 0;
+
+  color: $baseColors-grey;
+
+  border: none;
+  outline: none;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 62px;
+    height: 2px;
+
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    background-color:  rgba($baseColors-secondary, 0.25);
+  }
+
+  &:active::before  {
+    background-color: $baseColors-primary;
+  }
+}
+
+.pagination-slider__button--active {
+  &::before {
+    background-color: $baseColors-primary;
+  }
+}

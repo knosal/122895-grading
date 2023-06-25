@@ -36,6 +36,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+
     &:first-child {
       border: none;
     }
@@ -51,7 +52,6 @@
   text-align: center;
   color: $baseColors-black;
   text-transform: uppercase;
-  letter-spacing: 2;
 
   background-color: $baseColors-white;
 
@@ -69,14 +69,15 @@
 
   }
 
-  &--current {
-    color: $baseColors-primary;
-
-    border-bottom: 2px solid $baseColors-primary;
-  }
 
   @media (min-width: $tablet-width) {
     padding: 32px 20px;
+
+    &--current {
+      color: $baseColors-primary;
+
+      border-bottom: 2px solid $baseColors-primary;
+    }
   }
 }
 
