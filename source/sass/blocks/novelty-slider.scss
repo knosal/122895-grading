@@ -4,6 +4,7 @@
 @import "../global/variables.scss";
 @import "../global/visually-hidden.scss";
 
+
 .novelty-slider {
   background-color: $backgroundColors-flat-white;
 
@@ -196,7 +197,6 @@
     grid-area: slider;
   }
 }
-
 
 .novelty-slider__button-icon {
   width: 20px;
